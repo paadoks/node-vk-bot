@@ -12,6 +12,8 @@ app.post('/', (req, res) => {
   const { body } = req;
   switch (body.type) {
     case 'confirmation':
+      console.log(body.type);
+       console.log(body.group_id);
       res.end(CONFIRMATION);
       break;
 
